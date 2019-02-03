@@ -1,13 +1,8 @@
 {
   "port": 80,
+  "baseURL": "",
   "address": "",
-  "baseURL": "/",
-  "database": "/database.db",
-  "defaults": {
-    "scope": "/srv",
-    "allowCommands": false,
-    "allowEdit": true,
-    "allowNew": true,
-    "commands": []
-  }
+  "log": "stdout",
+  "database": "/filebrowser/database.db",
+  "root": "/srv"
 }
