@@ -1,0 +1,13 @@
+{
+  "port": 80,
+  "address": "",
+  "baseURL": "/",
+  "database": "/database.db",
+  "defaults": {
+    "scope": "/srv",
+    "allowCommands": false,
+    "allowEdit": true,
+    "allowNew": true,
+    "commands": []
+  }
+}
