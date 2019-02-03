@@ -2,8 +2,7 @@ FROM arm32v6/alpine:3.7
 
 RUN apk update && \
     apk add --no-cahce curl bash git && \
-    curl -fsSL https://filebrowser.github.io/get.sh | bash \
-    mkdir /config
+    curl -fsSL https://filebrowser.github.io/get.sh | bash 
 
 COPY config.json /config/filebrowser.json
 
@@ -13,4 +12,4 @@ VOLUME /srv
 
 ENTRYPOINT ["filebrowser"]
 
-CMD ["--config", "/config/filebrowser.json"]
+CMD ["-c", "/filebrowser/config.json", "-d", "/filebrowser/database.db"]
